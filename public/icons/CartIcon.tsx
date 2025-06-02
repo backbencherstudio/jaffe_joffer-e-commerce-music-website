@@ -1,0 +1,13 @@
+import React from 'react'
+
+export default function CartIcon() {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <path d="M10.6676 21.3346H20.3519C26.3354 21.3346 27.2454 17.5757 28.349 12.0934C28.6674 10.5121 28.8266 9.72148 28.4438 9.19473C28.061 8.66797 27.3272 8.66797 25.8598 8.66797H8.00098" stroke="white" strokeWidth={1.5} strokeLinecap="round"/>
+  <path d="M10.6673 21.3346L7.17229 4.68788C6.87552 3.50076 5.80889 2.66797 4.58525 2.66797H3.33398" stroke="white" strokeWidth={1.5} strokeLinecap="round"/>
+  <path d="M11.84 21.3359H11.2914C9.47363 21.3359 8 22.871 8 24.7645C8 25.0801 8.2456 25.3359 8.54857 25.3359H23.3333" stroke="white" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round"/>
+  <path d="M14 29.3359C15.1046 29.3359 16 28.4405 16 27.3359C16 26.2314 15.1046 25.3359 14 25.3359C12.8954 25.3359 12 26.2314 12 27.3359C12 28.4405 12.8954 29.3359 14 29.3359Z" stroke="white" strokeWidth={1.5}/>
+  <path d="M23.334 29.3359C24.4386 29.3359 25.334 28.4405 25.334 27.3359C25.334 26.2314 24.4386 25.3359 23.334 25.3359C22.2294 25.3359 21.334 26.2314 21.334 27.3359C21.334 28.4405 22.2294 29.3359 23.334 29.3359Z" stroke="white" strokeWidth={1.5}/>
+</svg>
+  )
+}
