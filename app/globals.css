@@ -14,8 +14,9 @@
  --hero-bg: url('../public/sea-wave-bg-2.jpg');
   --events-bg:url('../public/events-bg-pattern.png'),linear-gradient(180deg, #070707 0.61%, #A57C2B 34.63%, #CFAC44 54.7%, #E2D9BA 91.55%, #EFEFEF 100%);
   --latest-released:url('../public/latest-released.png'), linear-gradient(181deg, #EFEFEF 6.34%, #E3E3E3 30.96%, #D9D8D9 51.27%, #D8D8D8 80.81%, #FFF 99.51%);
-  --exclusive-pattern:url('../public/exclusive-pattern.png')
-
+  --exclusive-pattern:url('../public/exclusive-pattern.png');
+  --footer-bg:url('../public/footer.png')
+/* --footer-bg:url('../public/Footer.png'); */
 /* --footer-bg:url('../public/footer.png') */
  
 }
