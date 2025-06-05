@@ -16,6 +16,9 @@
   --latest-released:url('../public/latest-released.png'), linear-gradient(181deg, #EFEFEF 6.34%, #E3E3E3 30.96%, #D9D8D9 51.27%, #D8D8D8 80.81%, #FFF 99.51%);
   --exclusive-pattern:url('../public/exclusive-pattern.png');
   --footer-bg:url('../public/footer.png')
+  --create-user-bg:('../public/create-user-bg.png');
+  --create-user-button-bg:linear-gradient(180deg, #A57C2B 5.12%, #CFAC44 40.47%, #EACB55 65.29%, #FFEA99 86.81%)
+  
 /* --footer-bg:url('../public/Footer.png'); */
 /* --footer-bg:url('../public/footer.png') */
  
@@ -27,4 +30,15 @@
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.bg-create-user {
+  background-image: url('../public/create-user-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.bg-auth-common {
+  background-image: url('../public/login-bg.png');
+  background-size: cover;
+  background-position: center;
 }

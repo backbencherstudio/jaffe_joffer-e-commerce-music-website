@@ -25,7 +25,7 @@ export default function Events() {
   ];
 
   return (
-    <section className="bg-[image:var(--events-bg)] bg-cover h-[1146px] py-28">
+    <section className="bg-[image:var(--events-bg)] bg-cover py-28">
       <div className=" container ">
         <SectionHeader
           heading="Current Events"

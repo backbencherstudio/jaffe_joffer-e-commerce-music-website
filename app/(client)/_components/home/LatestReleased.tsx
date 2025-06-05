@@ -23,7 +23,7 @@ export default function LatestReleased() {
     />,
   ];
   return (
-    <section className=" bg-[image:var(--latest-released)] bg-cover h-[1146px] py-24">
+    <section className=" bg-[image:var(--latest-released)] bg-cover   py-24">
       <div className="container">
         <SectionHeader
           heading="Latest released songs"

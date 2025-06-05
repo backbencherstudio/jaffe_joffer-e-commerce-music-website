@@ -8,6 +8,7 @@ export default function Hero() {
       <h1 className='  text-[64px]   text-white font-[Playfair_Display] font-bold'  >Explore Trogents <br /> Music Entertainment</h1>
       <p className=' text-xl text-white max-w-[579px]'>Discover music and entertainment with Trogents! Get the latest albums, concert tickets, and exclusive merchandise—all in one seamless shopping experience.</p>
     </div>
+    
     </section>
   )
 }

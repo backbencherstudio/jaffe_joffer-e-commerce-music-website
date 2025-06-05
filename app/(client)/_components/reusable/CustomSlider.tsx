@@ -60,7 +60,7 @@ export default function CustomSlider({
           cursor: pointer;
           width: 18px;
           height: 18px;
-          background-color: ${bulletColor};
+          background: ${bulletColor};
           border-radius: 9999px;
           opacity: 1;
           position: relative;

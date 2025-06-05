@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="   bg-[image:var(--footer-bg)]  bg-cover  ">
-      <div className=" grid grid-cols-6 container py-28 border-b border-[#777980]">
+      <div className=" grid grid-cols-6 container py-28 border-b border-[#777980] px-7">
         <div className="col-span-2">
           <Image src={logo} alt="footer-logo" />
         </div>
@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
         <div className=" col-span-2">
           <p>Sign Up for our newsletter and never miss any offers.</p>
-          <div className="bg-white rounded-full shadow-md flex overflow-hidden w-full max-w-md">
+          {/* <div className="bg-white rounded-full shadow-md flex overflow-hidden w-full max-w-md">
             <input
               type="email"
               placeholder="Enter Your Email"
@@ -55,8 +55,11 @@ export default function Footer() {
             <button className="bg-gradient-to-r from-[#A57C2B] via-[#EACB55] to-[#FFEA99] text-black font-semibold text-sm px-6 py-3 rounded-none">
               Start For Free
             </button>
+          </div> */}
+          {/* <p>Follow Us</p> */}
+          <div className=" max-w-[547px]">
+            <input type="text" placeholder="Enter Your Email" className=" bg-white w-full py-6 px-3 rounded-xl" />
           </div>
-          <p>Follow Us</p>
           <div></div>
         </div>
       </div>
