@@ -2,11 +2,10 @@ import React from "react";
 import SectionHeader from "../reusable/SectionHeader";
 import Image from "next/image";
 import LatestImg from "@/public/latest-released.jpg";
+import CustomSlider from "../reusable/CustomSlider";
 
 export default function LatestReleased() {
-
-
-  const slides= [
+  const slides = [
     <Image
       className=" w-[1200px] h-[580px] rounded-[48px]"
       src={LatestImg}
@@ -22,7 +21,7 @@ export default function LatestReleased() {
       src={LatestImg}
       alt="latest-image"
     />,
-  ]
+  ];
   return (
     <section className=" bg-[image:var(--latest-released)] bg-cover h-[1146px] py-24">
       <div className="container">
@@ -34,13 +33,17 @@ export default function LatestReleased() {
           buttonText="Discover New Music"
         />
 
-        <div className="flex justify-center items-center mt-12 ">
-          <Image
-            className=" w-[1200px] h-[580px] rounded-[48px]"
-            src={LatestImg}
-            alt="latest-image"
-          />
-        </div>
+          {/* <div className="flex justify-center items-center mt-12 ">
+            <Image
+              className=" w-[1200px] h-[580px] rounded-[48px]"
+              src={LatestImg}
+              alt="latest-image"
+            />
+          </div> */}
+          <div className="mx-6 lg:mx-0">
+
+          <CustomSlider sliderId="latest" slides={slides} bulletColor="#777980"/>
+          </div>
       </div>
     </section>
   );

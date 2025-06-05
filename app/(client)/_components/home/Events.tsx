@@ -6,27 +6,22 @@ import CustomSlider from "../reusable/CustomSlider";
 
 export default function Events() {
   const slides = [
-    
-      <Image
-        className=" w-[1200px] h-[580px] rounded-[48px]"
-        src={EventsImage}
-        alt="event-image"
-      />
-  ,
-     
-      <Image
-        className=" w-[1200px] h-[580px] rounded-[48px]"
-        src={EventsImage}
-        alt="event-image"
-      />
-  
- ,
-      <Image
-        className=" w-[1200px] h-[580px] rounded-[48px]"
-        src={EventsImage}
-        alt="event-image"
-      />
-    
+    <Image
+      className=" w-[1200px] h-[580px] rounded-[48px]"
+      src={EventsImage}
+      alt="event-image"
+    />,
+    <Image
+      className=" w-[1200px] h-[580px] rounded-[48px]"
+      src={EventsImage}
+      alt="event-image"
+    />,
+
+    <Image
+      className=" w-[1200px] h-[580px] rounded-[48px]"
+      src={EventsImage}
+      alt="event-image"
+    />,
   ];
 
   return (
@@ -40,7 +35,7 @@ export default function Events() {
 
         <div className="mx-6 lg:mx-0">
           <CustomSlider
-          // sliderId="event"
+            sliderId="event"
             slides={slides}
             bulletColor="#DCA04A"
             activeBulletFill="#DCA04A"

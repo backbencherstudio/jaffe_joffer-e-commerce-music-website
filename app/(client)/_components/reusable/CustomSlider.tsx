@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 interface CustomSliderProps {
   slides: React.ReactNode[];
-  sliderId?: string; // Optional ID for the slide
+  sliderId: string; // Required for unique pagination class
   bulletColor?: string;
   activeBulletBorder?: string;
   activeBulletFill?: string;
@@ -21,19 +21,21 @@ export default function CustomSlider({
   activeBulletBorder = "#000000",
   activeBulletFill = "#6c6c6c",
 }: CustomSliderProps) {
+  const paginationClass = `custom-swiper-pagination-${sliderId}`;
+
   return (
-    <div className="w-full flex flex-col items-center ">
+    <div className="w-full flex flex-col items-center">
       {/* Slide Content */}
-      <div className="w-full  max-w-[1200px] rounded-[48px] overflow-hidden mt-12 ">
+      <div className="w-full max-w-[1200px] rounded-[48px] overflow-hidden mt-12">
         <Swiper
           modules={[Pagination, Autoplay]}
           autoplay={{
-            delay: 3000, // ✅ change slide every 4 seconds
+            delay: 3000,
             disableOnInteraction: true,
           }}
           pagination={{
             clickable: true,
-            el: ".custom-swiper-pagination", // bind to external container
+            el: `.${paginationClass}`,
           }}
         >
           {slides.map((slide, index) => (
@@ -48,11 +50,13 @@ export default function CustomSlider({
       </div>
 
       {/* External Pagination Bullets */}
-      <div className="custom-swiper-pagination mt-5 flex justify-center items-center gap-3"></div>
+      <div
+        className={`${paginationClass} mt-5 flex justify-center items-center gap-3`}
+      ></div>
 
-      {/* Bullet Style */}
+      {/* Dynamic Bullet Styles */}
       <style jsx global>{`
-        .custom-swiper-pagination .swiper-pagination-bullet {
+        .${paginationClass} .swiper-pagination-bullet {
           cursor: pointer;
           width: 18px;
           height: 18px;
@@ -65,7 +69,7 @@ export default function CustomSlider({
           margin-right: 10px;
         }
 
-        .custom-swiper-pagination .swiper-pagination-bullet-active::before {
+        .${paginationClass} .swiper-pagination-bullet-active::before {
           content: "";
           position: absolute;
           top: -7px;
@@ -78,10 +82,12 @@ export default function CustomSlider({
           z-index: -1;
         }
 
-        .custom-swiper-pagination .swiper-pagination-bullet-active {
+        .${paginationClass} .swiper-pagination-bullet-active {
           background-color: ${activeBulletFill};
         }
       `}</style>
     </div>
   );
 }
+// This component is a reusable slider that can be used across different sections of the website.
+  
